@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+    
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }   
+        /* header {
+            background-color: #3fb6a8;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        } */
+
+        section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 40px 60px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        nav {
+            background-color: #1f2d3d;
+            padding: 15px 0;
+            width: 100%;
+            position: sticky;
+            top: 0;
+        
+        }   
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+            width: 100%;
+           
+        }
+        nav ul li {
+            margin: 0 ;
+        }
+
+        nav ul li a {
+            color: #00bcd4;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav ul li a:hover {
+            background-color: #2980b9;
+            border-radius: 5px;
+        }
+        .banner {
+            /* background-image: url('giphy.webp'); */
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            /* border-radius: 8px; */
+            background-attachment: fixed;
+        }
+
+        section h2 span {
+            background-color: yellowgreen;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        * { box-sizing: border-box; }
+
+        body { font-family: sans-serif; }
+
+        .carousel {
+            background: #EEE;
+        }
+
+        .carousel-cell {
+            width: 66%;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
+
+        /* cell number */
+        .carousel-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(carousel-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        }
+
+        .banner-head{
+            overflow: hidden;
+            height: 50vh;
+        }
+        
+        .banner-image{
+            width : 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="banner-head">
+        <div class="banner">
+            <img src="giphy.webp" class="banner-image">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="carousel"
+            data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+        </div>
+        <h2><span>Home</span></h2>
+        <p>Welcome to my personal portfolio website! Here you can find information about my projects, skills, and how to contact me.</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ashish Yadav, a passionate web developer with experience in creating responsive and user-friendly websites. I enjoy working with modern technologies and solving complex problems through code.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>Database Management (MySQL)</li>
+        </ul>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Exploring New Technologies</li>
+            <li>Playing Video Games</li>
+            <li>Watching Movies</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:ashishyadav@example.com">ashishyadav@example.com</a></p>
+    </section>
+    <footer>
+        <p>© 2026 Ashish Yadav. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
